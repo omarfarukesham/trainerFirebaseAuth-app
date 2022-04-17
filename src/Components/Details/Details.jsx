@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Card, Modal } from "react-bootstrap";
-import "./SingleProduct.css";
+import "./Detials.css";
 
-const SingleProduct = ({product, handleAddToCart}) => {
-  const { training_name, image, Duration, price, Description,author } = product;
+const Details = ({details}) => {
+  const { training_name, image, Duration, price, Description,author } = details;
 
 
 
@@ -65,4 +65,4 @@ const SingleProduct = ({product, handleAddToCart}) => {
   );
 };
 
-export default SingleProduct;
+export default Details;
