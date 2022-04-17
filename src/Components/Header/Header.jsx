@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CustomLink from "../CustomLink/CustomLink";
-import logo from '../../images/logo.jpg'
 import './Header.css'
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Header = () => {
+  const [user, loading, error] = useAuthState(auth);
+  
+  const logOut = () =>{
+    signOut(auth);
+  }
+
+
   return (
     <div className="container-fluid bg-light py-3 sticky-top">
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -48,9 +57,12 @@ const Header = () => {
                 </CustomLink>
               </li>
               <li className="nav-item">
-                <CustomLink className="nav-link text-dark" to="/login">
+              { user?.uid ? <button onClick={logOut} className="btn btn-outline-primary">SignOut</button>:
+                 <CustomLink className=" text-black fw-bold icon--plus nav-link " to="/login"> <i className="fa-solid fa-user-plus"></i>Login</CustomLink>
+               }
+                {/* <CustomLink className="nav-link text-dark" to="/login">
                   Login
-                </CustomLink>
+                </CustomLink> */}
               </li>
               
             </ul>

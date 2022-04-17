@@ -42,7 +42,6 @@ const Home = () => {
         <Products></Products>
       </div>
       <div className="mt-5">
-      
         <Footer></Footer>
       </div>
     </>

@@ -6,6 +6,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Securities/Login/Login';
+import SignUp from './Components/Securities/SignUp/SignUp';
 import Services from './Components/Services/Services';
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/services" element={<Services></Services>}></Route>
           <Route path="/About" element={<About></About>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
+          <Route path='/signUp' element={<SignUp></SignUp>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
           
 
