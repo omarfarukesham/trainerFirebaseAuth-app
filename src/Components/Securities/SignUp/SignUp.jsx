@@ -28,9 +28,10 @@ const Login = () => {
     useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true });
 
   //Github login here
-  const [signInWithGithub, userGit, loadingGit, errorGit] =
-    useSignInWithGithub(auth);
-
+  const [signInWithGithub, userGit, loadingGit, errorGit] = useSignInWithGithub(auth);
+    if(userGit){
+        navigate('/')
+    }
   // google login here
   const [signInWithGoogle, userGoogle] = useSignInWithGoogle(auth);
   if (userGoogle) {
@@ -56,7 +57,7 @@ const Login = () => {
 
   return (
     <div className=" form--design mx-auto my-5 login--form">
-      <h3 className="my-4 icon--lock">
+      <h3 className="my-4 icon--lock text-center">
         <i class="fa-solid fa-user-plus"></i> SignUp
       </h3>
       <Form onSubmit={formHandler}>
@@ -132,10 +133,8 @@ const Login = () => {
           >
             <i class="fa-brands fa-github-square"></i>GitHub SignUp
           </button>
-          <button className="btn btn-outline-primary google--btn w-100">
-            <i class="fa-brands fa-facebook-square"></i>Facebook SignUp
-          </button>
-          <hr></hr>
+          
+    
         </div>
       </Form>
     </div>

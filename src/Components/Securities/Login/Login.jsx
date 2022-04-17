@@ -67,7 +67,7 @@ const Login = () => {
 
   return (
     <div className=" form--design mx-auto my-5 login--form">
-      <h3 className="my-4 icon--lock"><i className="fa-solid fa-lock-open"></i> LOGIN</h3>
+      <h3 className="my-4 icon--lock text-center"><i className="fa-solid fa-lock-open"></i> LOGIN</h3>
       <p className="text-danger">{error?.message}</p>
       <p className="text-danger">{error1?.message}</p>
       <p className="text-danger">{error12}</p>
@@ -97,7 +97,7 @@ const Login = () => {
         <div>
           Forget Password ? <button onClick={resetPassword} className="btn btn-link ">Reset Password</button>
           <hr></hr>
-          SignIn With Google ? <button onClick={signInGoogle} className="btn btn-link google--btn"><i className="fa-brands fa-google"></i>Google LogIn</button>
+          SignIn With Google ? <button onClick={signInGoogle} className="btn btn-link google--btn">Google LogIn</button>
           <hr></hr>
           Are you A new User ? <Link to="/signUp"> New User SignUp</Link>
         </div>
