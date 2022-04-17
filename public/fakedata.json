@@ -1,0 +1,63 @@
+[
+  {
+    "id": "623dd89bd5a755462b76ccc2",
+    "image": "https://cdn01.alison-static.net/courses/1944/alison_courseware_intro_1944.jpg",
+    "price": 4000,
+    "author": "Omar Faruk",
+    "training_name": "Present Skills Training",
+    "Duration": "16 Hours",
+    "Description": "Are you afriad about your presentation,Yes, I am here to help you to explore your next level presentation.ALL people have incredible capacity for presentation, just take challenge, be a rock presenter",
+    "Certification": "Yes"
+  },
+  {
+    "id": "623dd89bd5a755462b76ccc3",
+    "image": "https://cdn01.alison-static.net/courses/1933/alison_courseware_intro_1933.jpg",
+    "price": 10000,
+    "author": "Omar Faruk",
+    "training_name": "Public Speaking",
+    "Duration": "30 Hours",
+    "Description": "Each job, event private life, public speaking is an ultimate demand in which can distinguish your career and life. I will individually help you how to speak in front of public.",
+    "Certification": "Yes"
+  },
+  {
+    "id": "623dd89bd5a755462b76ccc4",
+    "image": "https://cdn01.alison-static.net/careers/career/personnel-recruiter.jpg",
+    "price": 5000,
+    "author": "Omar Faruk",
+    "training_name": "Career Transformation",
+    "Duration": "100 Hours",
+    "Description": "A Lot of people struggling to adopt their new, or existing career due to unexpacted challenges, Like market reshaping, job descriptions, huge pressure, how to manage existing phenomenon and future challenges. ",
+    "Certification": "Yes"
+  },
+  {
+    "id": "623dd89bd5a755462b76ccc5",
+    "image": "https://cdn01.alison-static.net/courses/4542/alison_courseware_intro_4542.jpg",
+    "price": 1000,
+    "author": "Omar Faruk",
+    "training_name": "Kids Explorer",
+    "Duration": "10 Hours",
+    "Description": "Technology addiction one of the major challenge for 21st century's kids, to stop this crisis kids need help and parent too, Both of you will get support from my Class",
+    "Certification": "Yes"
+  },
+  {
+    "id": "623dd89bd5a755462b76ccc6",
+    "image": "https://virtualspeech.com/img/blog/course-promo1.jpg",
+    "price": 4000,
+    "author": "Omar Faruk",
+    "training_name": "People Management",
+    "Duration": "160 Hours",
+    "Description": "Do you know people management one of the topmost job responsibilities of any managers, how to handle you people, complete guide and support will i share with you",
+    "Certification": "Yes"
+  },
+  {
+    "id": "623dd89bd5a755462b76ccc7",
+    "image": "https://virtualspeech.com/img/course/blog-footer-courses.jpg?1",
+    "price": 400,
+    "author": "Omar Faruk",
+    "training_name": "Virtual Master Class",
+    "Duration": "16 Hours",
+    "Description": "Decide what soft skills are necessary for your employees to have - your aim is to align this training with your business goals, for example, you might want to increase sales so you may focus on improving the soft skills linked to this.",
+    "Certification": "Yes"
+  }
+
+]

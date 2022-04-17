@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import slider from "../../images/slider.jpg";
 import slider1 from "../../images/slider1.jpg";
+import Products from "../Products/Products";
 
 const Home = () => {
   return (
@@ -30,6 +31,10 @@ const Home = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+      </div>
+      <div>
+        <h1 className="text-center fs-1 fw-bold">Get <span className="text-warning">Services</span></h1>
+        <Products></Products>
       </div>
     </>
   );

@@ -6,8 +6,8 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+    <div className="container-fluid bg-light py-3 sticky-top">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
         <Link to="/" className="navbar-brand fs-3 fw-bold " >
            {/* <img className="logo--design" src={logo} alt="" /> */}
