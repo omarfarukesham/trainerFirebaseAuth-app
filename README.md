@@ -3,7 +3,7 @@
 Personal Service provider(trainer)-app website-link: [Create React App](https://corporate-trainer-app.firebaseapp.com/).
 
 ##  Features
-some important feature which i include here
+
     *firebase authentication.
     *Login and Register with auth password & email
     *Social login system like google, github.
