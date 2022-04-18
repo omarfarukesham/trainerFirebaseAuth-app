@@ -1,18 +1,31 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal Service provider(trainer)-app website-link: [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+##  Features
+    *firebase authentication.
+    *Login and Register with auth password & email
+    *Social login system like google, github.
+    *CustomLink with react router
+    *Private route, without login user cant access with service section.
+    *Carousel slider and responsive navbar.
+    *Detailing with bootstrap modal
+    
 
-In the project directory, you can run:
 
-### `npm start`
+### Exclusive technology which has used this app
+    *React Library
+    *javascript
+    *React Router
+    *React Bootstrap
+    *local json data
+    *react-toastify
+    *firebase auth
+    *react firebase hooks
+    *vanilla css3
+    *JSX
+    
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
