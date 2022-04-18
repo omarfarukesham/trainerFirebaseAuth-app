@@ -23,13 +23,12 @@ const Products = () => {
     <>
       <div className="container">
         <div className="row">
-          <div className="card--design">
-            {products.slice(0,3).map((product) => (
+            {products.slice(0,4).map((product) => (
               <SingleProduct key={product.id} product={product}>
                 {" "}
               </SingleProduct>
             ))}
-          </div>
+        
         </div>
 
         <button onClick={reviewDetails} className='btn btn-primary'>Explore More..</button>   

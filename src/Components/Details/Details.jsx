@@ -13,8 +13,8 @@ const Details = ({details}) => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="col-md-6 col-lg-4 my-2 prod--design shadow">
-      <Card style={{ width: "18rem" }}>
+    <div className="col-md-6 col-lg-4 my-2 prod--design shadow p-4">
+      <Card >
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{training_name}</Card.Title>

@@ -16,11 +16,11 @@ const Services = () => {
       <div className="container">
           <h1 className="fs-1 fw-bold text-center">My Most On Demand Services</h1>
       <div className="row">
-        <div className="card--design">
+        
           {products.map((product) => (
             <Details key={product.id} details={product}></Details>
           ))}
-        </div>
+      
       </div>
     </div>
     <div className="mt-5">
