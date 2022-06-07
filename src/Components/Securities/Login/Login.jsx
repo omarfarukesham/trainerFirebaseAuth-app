@@ -7,6 +7,7 @@ import "./Login.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { async } from "@firebase/util";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -18,9 +19,7 @@ const Login = () => {
   const [ signInWithEmailAndPassword, user1, loading1, error1] = useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [updatePassword, updating, updateError] = useUpdatePassword(auth);
-  const [sendPasswordResetEmail] = useSendPasswordResetEmail(
-    auth
-  );
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
   // redirect the user required path
   const navigate = useNavigate()
@@ -67,6 +66,9 @@ const Login = () => {
 
   return (
     <div className=" form--design mx-auto my-5 login--form">
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <h3 className="my-4 icon--lock text-center"><i className="fa-solid fa-lock-open"></i> LOGIN</h3>
       <p className="text-danger">{error?.message}</p>
       <p className="text-danger">{error1?.message}</p>

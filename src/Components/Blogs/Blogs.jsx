@@ -1,8 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
   return (
     <div className="container">
+      <Helmet>
+        <title>Blogs</title>
+      </Helmet>
       <h1 className="text-center fs-2 fw-bold">Your Question</h1>
       <div class="accordion " id="accordionExample">
         <div class="accordion-item">

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { Button, Card, Modal } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./SingleProduct.css";
 
 const SingleProduct = ({product, handleAddToCart}) => {
-  const { training_name, image, Duration, price, Description,author } = product;
+  const { training_name, image, Duration, price, Description,author, id } = product;
+  const navigate = useNavigate()
 
-
-
+const bookedHandler = (id)=>{
+  navigate(`/booking/${id}`)
+}
   //Modal code handler here
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -21,10 +24,10 @@ const SingleProduct = ({product, handleAddToCart}) => {
           <Card.Title>Trainer: {author}</Card.Title>
 
           <Card.Text>Payment: ${price}</Card.Text>
-          <Card.Text> Time: {Duration}</Card.Text>
+          <Card.Text> Time: {Duration}</Card.Text>        
           <Card.Text>{Description.slice(0, 100) + "..."}</Card.Text>
           <div className=" ">
-            <Button  className="btn btn-outline-warning w-100 m-1" variant=" ">
+            <Button onClick={()=>bookedHandler(id)} className="btn btn-outline-warning w-100 m-1" variant=" ">
               Book Now
             </Button>
             <Button  onClick={handleShow} className="btn btn-outline-primary w-100 m-1" variant=" ">

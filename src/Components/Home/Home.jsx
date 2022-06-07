@@ -9,10 +9,14 @@ import bgmea from '../../images/BGMEA2.PNG'
 import a2i from '../../images/a2i.jpg'
 import min from '../../images/10min.jpg'
 import ilo from '../../images/ilo.png'
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <>
+    <Helmet>
+      <title>Home-corporate-Trainer</title>
+    </Helmet>
       <div className="carousel--slider container p-3">
         <Carousel variant="white">
           <Carousel.Item>

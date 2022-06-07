@@ -1,8 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import p1 from "../../images/f.jpg";
 const About = () => {
   return (
     <div className=" container">
+      <Helmet>
+        <title>About - Trainer</title>
+      </Helmet>
       <div>
         <h1 className="text-center fs-2 fw-bold">About Me</h1>
         <img className="w-25" src={p1} alt="about me images" />

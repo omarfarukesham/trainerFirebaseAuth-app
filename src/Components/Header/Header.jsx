@@ -18,7 +18,7 @@ const Header = () => {
     <div className="container-fluid bg-light py-3 sticky-top">
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
-        <Link to="/" className="navbar-brand fs-3 fw-bold " >
+        <Link to="/" className="navbar-brand fs-3 fw-bold " title="This is Omar Faruk, working as a Corporate Trainer" >
            {/* <img className="logo--design" src={logo} alt="" /> */}
            Corporate <span className="logo--design"> Trainer</span>
           </Link>

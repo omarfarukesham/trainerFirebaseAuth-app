@@ -3,9 +3,11 @@ import { Button, Card, Modal } from "react-bootstrap";
 import "./Detials.css";
 
 const Details = ({details}) => {
-  const { training_name, image, Duration, price, Description,author } = details;
+  const { training_name, image, Duration, price, Description,author, id } = details;
 
-
+  const bookingHandler = (id)=>{
+    console.log(id);
+  }
 
   //Modal code handler here
   const [show, setShow] = useState(false);
@@ -24,8 +26,8 @@ const Details = ({details}) => {
           <Card.Text> Time: {Duration}</Card.Text>
           <Card.Text>{Description.slice(0, 100) + "..."}</Card.Text>
           <div className=" ">
-            <Button  className="btn btn-outline-warning w-100 m-1" variant=" ">
-              Book Now
+            <Button onClick={bookingHandler(id)} className="btn btn-outline-warning w-100 m-1" variant=" ">
+              Booked Now
             </Button>
             <Button  onClick={handleShow} className="btn btn-outline-primary w-100 m-1" variant=" ">
               Details
@@ -59,7 +61,6 @@ const Details = ({details}) => {
           </Modal.Footer>
         </Modal>
       </div>
-
 
     </div>
   );

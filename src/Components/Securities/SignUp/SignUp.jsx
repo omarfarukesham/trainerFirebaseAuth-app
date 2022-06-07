@@ -10,6 +10,7 @@ import {
 import { auth } from "../../../firebase.init.js";
 import { useNavigate } from "react-router-dom";
 import { async } from "@firebase/util";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const [name, setName] = useState("");
@@ -57,6 +58,9 @@ const Login = () => {
 
   return (
     <div className=" form--design mx-auto my-5 login--form">
+      <Helmet>
+        <title>SignUp</title>
+      </Helmet>
       <h3 className="my-4 icon--lock text-center">
         <i class="fa-solid fa-user-plus"></i> SignUp
       </h3>
